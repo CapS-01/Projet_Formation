@@ -5,107 +5,218 @@
   margin: 0;
   padding: 0;
 }
-.lol {
-  display: flex;
- 
-}
-.head {
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  height: 300px;
-  border: 3px solid black;
-  margin: 1em;
-  flex-wrap: wrap;
-}
-
-.head p {
-  font-family: "Raleway";
-
-}
-.S1 {
-  height: 25px;
-  width: auto;
-
-}
-h1 {
-  font-size: 2em;
+body {
+  font-family:"Raleway"
 }
 header {
   width: 100%;
   height: 70px;
-  border: 3px dotted black;
+  /* border: 3px dotted black; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: stretch;
+  justify-content: space-between;
 }
-.logo {
+.recherches_formulaire  {
+  display: flex;
+  /* justify-content: flex-start;
+  align-items: center; */
+  height: auto;
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.5); */
+  border-radius: 999px;
+  /* max-widht */
+
+}
+.Recherches input {
+  border: none;
+  outline: none;
+  background: none ;
+}
+#search_submit {
+  border-radius: 0 10px 10px 0;
+  height: 50px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  background-color: #0065fc;
+  border:none;
+}
+
+.icone_ici {
+  background-color: #F2F2F2;
+  border-radius: 10px 0 0 10px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#search{
+  width: 300px;
+  border: #f2f2f2 1px solid;
+  padding-left: 15px;
+}
+nav {
+  display: flex;
   height: 100%;
-  width: auto
+  /* border: 3px solid red; */
+  flex-direction: row;  
+
 }
-.rech {
-  position: absolute;
-  margin: 0px;
-  right: 0px;
-  width: 140px;
-  height: 70px;
-  border: 3px solid black;
+.lien {
+  padding-top: 25px;
+  margin-top: 30px;
+  margin-right: 30px;
+  text-decoration: none;
+  font-family: Raleway;
+}
+.lien:hover {
+  border-top: 8px solid  #0065FC;
+}
+/* valeur intervalle */
+@media (min-width: 768px) and (max-width: 992px) {
+  .lien:hover {
+    border-top: unset;
+    border-bottom: 8px solid #0065FC;
+  }
   
 }
-/* réflexion sur les Break-point
-De XXmax à 992px = Desktop
-de 992px à 768px = Tablette
-de 768px à XXmin = Portable */
-
-.essai {
+.filtre_section {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 400px;
+}
+.info {
+  margin-right: 5px;
+}
+
+.fa-info {
+  border-radius: 50%;
+}
+.liste_filtres {
+  display: flex;
+  height: 20%;
+  width: 100%;
+  /* border: 3px solid black; */
+  align-items: center;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 20vh;
-  width: 100%;
-  background-color: #F2F2F2;
   
-
 }
-.I {
-  height: 75px;
-  width: 75px;
-  background-color: #0065FC;
-  border: 3px solid black;
+i:not(.fa-info,.fa-location-dot){
+  color: #0065FC;
 }
 
-.II {
-  height: 75px;
-  width: 75px;
-  background-color: #0065FC;
-  border: 3px solid black;
-  justify-self: end;
-}
-
-.new {
+.btn {
   display: flex;
+  height: 30px;
+  /* width: 100px; */
+  border: 2px solid #dbdbdb;
+  border-radius: 50px 50px 50px 50px;
   flex-direction: row;
-  flex-wrap: wrap;
-  height: 20vh;
-  width: 100%;
-  background-color: #F2F2F2;
-  align-items: stretch;
+  align-items: center;
+  padding-right: 5px;
 }
-
-.itz {
-  height: 70px;
- flex: 1;
-  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  
-}
-.ita{
-  height: 70px;
-  flex: 1;
-   background-image: linear-gradient(to right, #870000, #190a05);
+.btn2 {
+  position: relative;
+  left: -2px;
+  display: flex;
+  height: 30px;
+  width: 30px;
+  background-color: #DEEBFF;
+  border-radius: 50%;
  
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
 }
 
-@media (max-width:992px) {
-
+.proposition_hebergemement{
+  display: flex;
+  background:#F2F2F2;
+  border-radius: 30px;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
   
+
+}
+.encar {
+  height: 10%;
+  border: solid black 8px;
+
+}
+.partie {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+.card {
+  width: 200px;
+  height: 300px;
+}
+.card img {
+  height: 50%;
+}
+
+.ESSAI {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+}
+.carte {
+  height: 150px;
+  width: 200px;
+  background: #DEEBFF;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.ES {
+  height: 75px;
+  width: 100px;
+}
+.fond_carte {
+  height: 55%;
+  border-radius: 10px 10px 0px 0px;
+  /* background-image: url(images/hebergements/3_medium/chambre_bleu.jpg); */
+ background-size: auto;
+  margin: 5px;
+}
+.photo_fond {
+  object-fit: scale-down;
+}
+.titre_carte {
+  font-size: 8px;
+  height: 10%;
+  padding-left: 10px;
+  font-weight: 900;
+}
+.description_carte {
+  height: 10%;
+  padding-left: 10px;
+  font-weight: 200;
+  font-size: 10px;
+  margin-top: 8px;
+
+}
+.description_carte span {
+  font-style: bold;
+}
+.rank_carte {
+  padding-left: 10px;
+  height: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }

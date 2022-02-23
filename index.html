@@ -8,51 +8,88 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8615c0f2fd.js" crossorigin="anonymous"></script>
+
 
     <title>Projet Bookie</title>
 </head>
 <body>
     <header id="bookie"> 
-        <div class="logo"><a href="#bookie"><img src="images/logo/Booki.png" alt="logo" style="height: 100%"></a></div>
-        <div class="rech"></div>
+        <div class="logo"><a href="#bookie"><img src="images/logo/Booki.png" alt="logo" class="logo"></a></div>
+        <nav>
+            <a href="#hebergements" class="lien">Hébergements</a>
+            <a href="#Activités" class="lien">Activités</a>
+        </nav>
     </header>
-<div class="lol">
-    <button>rechercher</button>
-</div>
-    <div class="head">
-     
-        <h1 class="S1"> Trouver votre <span>hébergement</span> pour des vacances de rêve ! </h1>
-       
-        <p class="S1">
-            En plein centre ville ou en pleine nature 
-        </p>
-        <p class="S1">
 
-        </p>
-        <p class="S1"></p>
-    </div>
+    <section class="filtre_section">
+    
+        <h1> Trouver votre hébergement pour des vacances de rêve !</h1>
+        <p>  En plein centre ville ou en pleine nature </p>
 
-    <div id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos dicta voluptatibus earum, mollitia dolores tenetur itaque! 
-        Commodi maiores odio hic eum nulla sapiente ab! Est, eligendi possimus! Dolorum, ipsa?</div>
+        
+        <form action="#" method="post" class="recherches_formulaire">
+            <div class="icone_ici">
+                <i class="fa-solid fa-location-dot "></i>
+            </div>
+            <input  id="search" type="search" name="ville" placeholder="Une Ville ?" maxlength="16" >
+            <input id="search_submit" type="submit" value="Rechercher">
+        </form>
+        
+            <p> <i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 
-    <div class="essai">
-        <div class="I"></div>
-        <div class="I"></div>
-        <div class="I"></div>
-        <div class="I"></div>
-        <div class="I"></div>
-        <div class="II"></div>
-        <div class="I"></div>
-    </div>
-<div class="new">
-    <div class="itz">
+        <div class="liste_filtres">
+            <div class="txt">Filtres</div>
+            <div class="btn"><div class="btn2"><i class="fa-solid fa-money-bill-1-wave"></i></div>Economique</div>
+            <div class="btn"><div class="btn2"><i class="fa-solid fa-heart"></i></div>Romantique</div>
+            <div class="btn"><div class="btn2"><i class="fa-solid fa-child"></i></div>Familial</div>
+            <div class="btn"><div class="btn2"><i class="fa-solid fa-dog"></i></div>Animaux Autorisés</div>
+            <div class="btn"><div class="btn2"></div></div>
+        </div>
+    </section>
+    <section class="proposition_hebergemement">
 
-    </div>
-    <div class="ita">
+            <div class="encar"></div>
+            <div class="partie">
+                <div class="card"><img src="images/hebergements/3_medium/chambre_bleu.jpg" alt=""></div>
+                <div class="card"><img src="images/hebergements/3_medium/chambre_bleu.jpg" alt=""></div>
+                <div class="card"><img src="images/hebergements/3_medium/chambre_bleu.jpg" alt=""></div>
+                <div class="card"><img src="images/hebergements/3_medium/chambre_bleu.jpg" alt=""></div>
+                <div class="card"><img src="images/hebergements/3_medium/chambre_bleu.jpg" alt=""></div>
+                <div class="card"><img src="images/hebergements/3_medium/chambre_bleu.jpg" alt=""></div>
+                <div class="card"><img src="images/hebergements/3_medium/chambre_bleu.jpg" alt=""></div>
+                
+            </div>
+            <div class="encar"></div>
 
-    </div>
-</div>
-    </body>
+    </section>
+   
+        <div class="ESSAI">
+            <div class="carte">
+                <div class="fond_carte">
+                    
+                
+                        <img src="images/hebergements/3_medium/chambre_bleu.jpg" alt="" class="photo_fond">
+                 
+
+                    </div>
+                <div class="titre_carte">
+                    <h1>La Belle Bleu</h1>
+                </div>
+                <div class="description_carte">
+                    <p>Nuit à partir de 52<span>€</span></p>
+                </div>
+                <div class="rank_carte">
+                    <i id="1" class="fa-solid fa-star"></i>
+                    <i id="2" class="fa-solid fa-star"></i>
+                    <i id="3" class="fa-solid fa-star"></i>
+                    <i id="4" class="fa-solid fa-star"></i>
+                    <i id="5" class="fa-solid fa-star"></i>
+
+                </div>
+            </div>
+        </div>
+     </body>
 
 </html>
 
