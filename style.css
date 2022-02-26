@@ -17,6 +17,14 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.conteneur {
+  max-width: 1400px;
+  margin: auto;
+}
+.marg {
+  margin: 0px 20px;
+}
 .recherches_formulaire  {
   display: flex;
   /* justify-content: flex-start;
@@ -109,13 +117,29 @@ nav {
   flex-wrap: wrap;
   
 }
-i:not(.fa-info,.fa-location-dot){
+i:not(.fa-location-dot){
   color: #0065FC;
+  font-size: 20px;
 }
-
+#information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+.indication {
+  display: flex;
+  gap: 10px;
+}
+i.fa-info {
+  font-size: 10px;
+}
 .btn {
   display: flex;
-  height: 30px;
+  height: 50px;
   /* width: 100px; */
   border: 2px solid #dbdbdb;
   border-radius: 50px 50px 50px 50px;
@@ -127,8 +151,8 @@ i:not(.fa-info,.fa-location-dot){
   position: relative;
   left: -2px;
   display: flex;
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   background-color: #DEEBFF;
   border-radius: 50%;
  
@@ -136,28 +160,48 @@ i:not(.fa-info,.fa-location-dot){
   justify-content: center;
   margin-right: 5px;
 }
-
+/* .resultat_recherche{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+} */
 .proposition_hebergemement{
+  display: flex;
+  border-radius: 30px;
+  gap: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.hebergement_lieu {
+  flex:2;
   display: flex;
   background:#F2F2F2;
   border-radius: 30px;
-  height: 100vh;
-  width: 100%;
-  flex-direction: column;
+    flex-direction: column;
   justify-content: space-between;
-  
+
 
 }
+.partie_activite {
+  height: 100%;
+  flex: 1;
+  background-color: #f2f2f2;
+}
+
 .encar {
-  height: 10%;
-  border: solid black 8px;
+ padding: 30px;
 
 }
-.partie {
+.liste_carte {
   display: flex;
-  align-content: space-around;
+  justify-content: space-around;
+  align-content: space-between;
+  background:#F2F2F2;;
   flex-wrap: wrap;
-  overflow: scroll;
+  flex: 2;
+  gap: 30px;
 }
 .card {
   width: 200px;
@@ -175,26 +219,36 @@ i:not(.fa-info,.fa-location-dot){
   width: 100%;
 }
 .carte {
+  /* margin: 20px 20px 20px 20px; */
+  padding: 3px 3px 3px 3px;
   height: 150px;
   width: 200px;
-  background: #DEEBFF;
+  /* background: #DEEBFF; */
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  background: white;
 }
-.ES {
-  height: 75px;
-  width: 100px;
-}
+
 .fond_carte {
   height: 55%;
+  width: 100%;
   border-radius: 10px 10px 0px 0px;
   /* background-image: url(images/hebergements/3_medium/chambre_bleu.jpg); */
- background-size: auto;
-  margin: 5px;
+  overflow: hidden;
+
+
 }
-.photo_fond {
-  object-fit: scale-down;
+.fond_carte img {
+  /* position: relative;
+  top: -65px;
+  width: 200px ;
+  height: auto;
+   */
+   width: 200px;
+   object-position: 0 -65px;
+   object-fit: cover;
+   height: 150px;
 }
 .titre_carte {
   font-size: 8px;
@@ -219,4 +273,7 @@ i:not(.fa-info,.fa-location-dot){
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+.fa-star {
+  height: 8px;
 }

@@ -14,16 +14,17 @@
     <title>Projet Bookie</title>
 </head>
 <body>
-    <header id="bookie"> 
+    <header id="bookie" class="marg"> 
         <div class="logo"><a href="#bookie"><img src="images/logo/Booki.png" alt="logo" class="logo"></a></div>
         <nav>
             <a href="#hebergements" class="lien">Hébergements</a>
             <a href="#Activités" class="lien">Activités</a>
         </nav>
     </header>
+<div class="conteneur">
 
-    <section class="filtre_section">
-    
+    <section class="filtre_section marg">
+        
         <h1> Trouver votre hébergement pour des vacances de rêve !</h1>
         <p>  En plein centre ville ou en pleine nature </p>
 
@@ -36,7 +37,6 @@
             <input id="search_submit" type="submit" value="Rechercher">
         </form>
         
-            <p> <i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 
         <div class="liste_filtres">
             <div class="txt">Filtres</div>
@@ -44,35 +44,159 @@
             <div class="btn"><div class="btn2"><i class="fa-solid fa-heart"></i></div>Romantique</div>
             <div class="btn"><div class="btn2"><i class="fa-solid fa-child"></i></div>Familial</div>
             <div class="btn"><div class="btn2"><i class="fa-solid fa-dog"></i></div>Animaux Autorisés</div>
-            <div class="btn"><div class="btn2"></div></div>
         </div>
+    <div class="indication">
+      <span id="information"><i class="fa-solid fa-info"></i></span><p> Plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
     </section>
-    <section class="proposition_hebergemement">
-
-            <div class="encar"></div>
-            <div class="partie">
-                <div class="card"><img src="images/hebergements/3_medium/chambre_bleu.jpg" alt=""></div>
-                <div class="card"><img src="images/hebergements/3_medium/chambre_bleu.jpg" alt=""></div>
-                <div class="card"><img src="images/hebergements/3_medium/chambre_bleu.jpg" alt=""></div>
-                <div class="card"><img src="images/hebergements/3_medium/chambre_bleu.jpg" alt=""></div>
-                <div class="card"><img src="images/hebergements/3_medium/chambre_bleu.jpg" alt=""></div>
-                <div class="card"><img src="images/hebergements/3_medium/chambre_bleu.jpg" alt=""></div>
-                <div class="card"><img src="images/hebergements/3_medium/chambre_bleu.jpg" alt=""></div>
-                
+    <section class="proposition_hebergemement marg">
+          <div class="hebergement_lieu">
+            <div class="encar"><h2>Hébergemment à Marseille</h2> </div>
+             <div class="liste_carte">
+                <div class="carte Ic">
+                    <div class="fond_carte"> 
+                        <img src="images/hebergements/3_medium/chambre_bleu.jpg" alt="">
+                    </div>
+                    <div class="titre_carte">
+                        <h1>La Belle Bleu</h1>
+                    </div>
+                    <div class="description_carte">
+                        <p>Nuit à partir de 52<span>€</span></p>
+                    </div>
+                    <div class="rank_carte">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="carte IIc">
+                    <div class="fond_carte"> 
+                        <img src="images/hebergements/3_medium/chambre_bleu.jpg" alt="">
+                    </div>
+                    <div class="titre_carte">
+                        <h1>La Belle Bleu</h1>
+                    </div>
+                    <div class="description_carte">
+                        <p>Nuit à partir de 52<span>€</span></p>
+                    </div>
+                    <div class="rank_carte">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="carte IIIc">
+                    <div class="fond_carte"> 
+                        <img src="images/hebergements/3_medium/chambre_bleu.jpg" alt="">
+                    </div>
+                    <div class="titre_carte">
+                        <h1>La Belle Bleu</h1>
+                    </div>
+                    <div class="description_carte">
+                        <p>Nuit à partir de 52<span>€</span></p>
+                    </div>
+                    <div class="rank_carte">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="carte IVc">
+                    <div class="fond_carte"> 
+                        <img src="images/hebergements/3_medium/chambre_bleu.jpg" alt="">
+                    </div>
+                    <div class="titre_carte">
+                        <h1>La Belle Bleu</h1>
+                    </div>
+                    <div class="description_carte">
+                        <p>Nuit à partir de 52<span>€</span></p>
+                    </div>
+                    <div class="rank_carte">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="carte Vc">
+                    <div class="fond_carte"> 
+                        <img src="images/hebergements/3_medium/chambre_bleu.jpg" alt="">
+                    </div>
+                    <div class="titre_carte">
+                        <h1>La Belle Bleu</h1>
+                    </div>
+                    <div class="description_carte">
+                        <p>Nuit à partir de 52<span>€</span></p>
+                    </div>
+                    <div class="rank_carte">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="carte VIc">
+                    <div class="fond_carte"> 
+                        <img src="images/hebergements/3_medium/chambre_bleu.jpg" alt="">
+                    </div>
+                    <div class="titre_carte">
+                        <h1>La Belle Bleu</h1>
+                    </div>
+                    <div class="description_carte">
+                        <p>Nuit à partir de 52<span>€</span></p>
+                    </div>
+                    <div class="rank_carte">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+             </div>
+             <div class="encar"><h2>Afficher plus</h2></div>
+          </div>
+          <div class="partie_activite">
+            <div class="carte Ic">
+                <div class="fond_carte"> 
+                    <img src="images/hebergements/3_medium/chambre_bleu.jpg" alt="">
+                </div>
+                <div class="titre_carte">
+                    <h1>La Belle Bleu</h1>
+                </div>
+                <div class="description_carte">
+                    <p>Nuit à partir de 52<span>€</span></p>
+                </div>
+                <div class="rank_carte">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
             </div>
-            <div class="encar"></div>
+          </div>
+      
+       
 
     </section>
-   
+</div>
+
         <div class="ESSAI">
             <div class="carte">
                 <div class="fond_carte">
                     
-                
-                        <img src="images/hebergements/3_medium/chambre_bleu.jpg" alt="" class="photo_fond">
-                 
+                    <img src="images/hebergements/3_medium/chambre_bleu.jpg" alt="">
 
-                    </div>
+                </div>
                 <div class="titre_carte">
                     <h1>La Belle Bleu</h1>
                 </div>
@@ -90,7 +214,7 @@
             </div>
         </div>
      </body>
-
+<script src="app.js"></script>
 </html>
 
 
